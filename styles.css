@@ -1,0 +1,89 @@
+body {
+    font-family: 'Saira Condensed', sans-serif;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 30px;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0 10%;
+    padding: 3% 0 0;
+}
+
+.blue {
+    color: blue;
+}
+
+.column {
+    float: left;
+}
+.line {
+    border-left: 4px solid black;
+    height: 310px;
+    margin-top: 5%;
+}
+
+.link {
+    font-size: 32px;
+    margin-top: 300px;
+    text-align: center;
+    width: 28%;
+}
+
+.header {
+    background-image: url('background.jpg');
+    background-position: center 25%;
+    background-size: cover;
+}
+
+.right {
+    float: right;
+}
+
+.row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+#features {
+    padding: 6% 3%;
+    width: 33%;
+}
+
+#features-wrapper {
+    margin-left: 12.5%;
+    margin-right: 5%;
+}
+
+#red {
+    border-left: 4px solid red;
+    height: 128px;
+}
+
+#title {
+    font-size: 100px;
+    line-height: 1;
+    margin: 0 17.50%;
+    padding: 4% 0 9%;
+    text-align: center;
+}
+
+.rectangle-4, .rectangle-4 * {
+    box-sizing: border-box;
+}
+.rectangle-4 {
+    background: #060609;
+    width: 1440px;
+    height: 609px;
+    position: relative;
+}
