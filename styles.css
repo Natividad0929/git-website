@@ -1,3 +1,15 @@
+
+@media (max-width: 768px) {
+.header {
+    text-align: center;
+}
+.column {
+    width: 100%;
+}
+.line {
+    display: none;
+}
+}
 body {
     font-family: 'Saira Condensed', sans-serif;
     margin: 0;
