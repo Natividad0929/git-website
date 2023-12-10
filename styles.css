@@ -12,9 +12,9 @@
 }
 body {
     font-family: 'Saira Condensed', sans-serif;
-    margin: 0;
+    margin: 0px;
+    width: 100%;
 }
-
 li {
     display: inline-block;
     font-size: 30px;
@@ -41,8 +41,20 @@ ul {
     border-left: 4px solid black;
     height: 310px;
     margin-top: 5%;
+    
 }
-
+.shape {
+    border-style: solid;
+    border-color: #e83439;
+    border-width: 5px 0 0 0;
+    width: 69px;
+    height: 0px;
+    position: absolute;
+    left: 743px;
+    top: 80px;
+    transform-origin: 0 0;
+    transform: rotate(90deg) scale(1, 1);
+}
 .link {
     font-size: 32px;
     margin-top: 300px;
@@ -51,13 +63,26 @@ ul {
 }
 
 .header {
-    background-image: url('background.jpg');
-    background-position: center 25%;
+    background-image: url(img/header-bg.png);
+    background-position: center;
     background-size: cover;
 }
-
+.logo
+{
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    margin-top: 100px;
+}
+.header .logo {
+    left: 100%;
+    margin-left: -37.5px;
+}
 .right {
     float: right;
+    color:aliceblue
 }
 
 .row:after {
@@ -66,21 +91,23 @@ ul {
     display: table;
 }
 
-
 #features {
     padding: 6% 3%;
     width: 33%;
 }
 
 #features-wrapper {
-    margin-left: 12.5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 7%;
 }
 
 #red {
-    border-left: 4px solid red;
-    height: 128px;
+    border-style: solid;
+    border-color:#e83439;
+    height: 80px;
+    margin-top: 80px;
 }
+
 
 #title {
     font-size: 100px;
@@ -90,12 +117,43 @@ ul {
     text-align: center;
 }
 
-.rectangle-4, .rectangle-4 * {
-    box-sizing: border-box;
-}
 .rectangle-4 {
+    box-sizing: border-box;
     background: #060609;
-    width: 1440px;
-    height: 609px;
+    width: 1340px;
+    height: 550px;
     position: relative;
+}
+.line-1 {
+    border-style: solid;
+    border-color: #e83439;
+    border-width: 5px 0 0 0;
+    width: 69px;
+    height: 0px;
+    position: absolute;
+    left: 743px;
+    top: 80px;
+    transform-origin: 0 0;
+    transform: rotate(90deg) scale(1, 1);
+}
+.our-reason-goal {
+    color: #ffffff;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 700;
+    position: absolute;
+    left: 771px;
+    top: 73px;
+    width: 445px;
+    height: 103px;
+}
+.rectangle-3 {
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 150px;
+    margin-top: 80px;
+    width: 500px;
+    height: 384px;
+    position: relative;
+    box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, 0.2);
 }
