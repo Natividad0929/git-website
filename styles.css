@@ -1,19 +1,9 @@
-
-@media (max-width: 768px) {
-.header {
-    text-align: center;
-}
-.column {
-    width: 100%;
-}
-.line {
-    display: none;
-}
-}
 body {
     font-family: 'Saira Condensed', sans-serif;
     margin: 0px;
     width: 100%;
+    padding: 0px;
+    background-color: #f7f5f5;
 }
 li {
     display: inline-block;
@@ -27,21 +17,35 @@ p {
 
 ul {
     margin: 0 10%;
-    padding: 3% 0 0;
+    padding: 2% 0 0;
 }
 
 .blue {
-    color: blue;
+    color:#2d79ec;
 }
 
 .column {
     float: left;
 }
+
 .line {
-    border-left: 4px solid black;
+    border-left: 4px solid #060609;
     height: 310px;
     margin-top: 5%;
     
+}
+
+.iconimg {
+    width: 100px;
+    height: 97.68px;
+    position: relative;
+    overflow: visible;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.iconimg:hover {
+    transform: scale(1.1);
 }
 .shape {
     border-style: solid;
@@ -66,26 +70,27 @@ ul {
     background-image: url(img/header-bg.png);
     background-position: center;
     background-size: cover;
-}
-.logo
-{
     box-sizing: border-box;
-    flex-shrink: 0;
-    width: 75px;
-    height: 75px;
-    position: absolute;
-    margin-top: 100px;
-}
-.header .logo {
-    left: 100%;
-    margin-left: -37.5px;
-}
-.right {
-    float: right;
-    color:aliceblue
+    width: 1340px;
+    height: 600px;
 }
 
-.row:after {
+.nav {
+    float: right;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 10px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav:hover {
+    color: #2d79ec;
+    transform: scale(1.1);
+}
+
+.row::after {
     clear: both;
     content: "";
     display: table;
@@ -99,6 +104,7 @@ ul {
 #features-wrapper {
     margin-left: 10%;
     margin-right: 7%;
+    margin-top: -20px;
 }
 
 #red {
@@ -117,12 +123,15 @@ ul {
     text-align: center;
 }
 
-.rectangle-4 {
+.section {
     box-sizing: border-box;
     background: #060609;
     width: 1340px;
     height: 550px;
     position: relative;
+}
+#holderwhite {
+    background: #ffffff;
 }
 .line-1 {
     border-style: solid;
@@ -136,8 +145,20 @@ ul {
     transform-origin: 0 0;
     transform: rotate(90deg) scale(1, 1);
 }
+.line-2 {
+    border-style: solid;
+    border-color: #e83439;
+    border-width: 5px 0 0 0;
+    width: 69px;
+    height: 0px;
+    margin-top: 90px;
+    margin-left: 10px;
+    position: absolute;
+    transform-origin: 0 0;
+    transform: rotate(90deg) scale(1, 1);
+}
 .our-reason-goal {
-    color: #ffffff;
+    color: #f7f5f5;
     text-align: left;
     font-size: 50px;
     font-weight: 700;
@@ -147,13 +168,115 @@ ul {
     width: 445px;
     height: 103px;
 }
-.rectangle-3 {
-    box-sizing: border-box;
+.devfest-pic {
     width: 100%;
     margin-left: 150px;
     margin-top: 80px;
     width: 500px;
     height: 384px;
-    position: relative;
+    position: absolute;
     box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, 0.2);
 }
+
+#textgoal {
+    color: #ffffff;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 0;
+    position: absolute;
+    left: 770px;
+    top: 170px;
+    width: 400px;
+    height: 226px;
+}
+.footer{
+    box-sizing: border-box;
+    background-image: url("img/footerbg.png");
+    background-repeat: no-repeat;
+    width: 1340px;
+    height: 250px;
+    position: absolute;
+}
+
+#teamtext {
+    font-family: 'SairaCondensed-Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 17.50%;
+    padding: 4% 0 9%;
+    text-align: center;
+}
+    
+#boxcol {
+    width: 33%;
+    float: left;
+}
+
+.rectanglepic {
+    background: #d9d9d9;
+    width: 300px; /* 328 */
+    height: 200px; /* 293 */
+    margin: auto; /* Add this line */
+}
+.recname {
+    color: #000000;
+    text-align: center;
+    font-family: 'SairaCondensed-Regular';
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+.recrole {
+    color: #000000;
+    text-align: center;
+    font-family: 'SairaCondensed-Regular';
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+#footerletter{
+    text-align: left;
+    font-family: 'SairaCondensed-Bold', sans-serif;
+    font-size: 55px;
+    line-height: 105.46%;
+    font-weight: 700;
+    position: relative;
+    width: 455px;
+    height: 148px;
+}
+
+#footertell {
+    font-size: 35px;
+    line-height: 1.1;
+    margin: 3% 0 0 11.50%;
+    text-align: left;
+}
+
+.mail {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+    top: 6px;
+}
+
+.mailname {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'SairaCondensed';
+    font-size: 15px;
+    font-weight: 100;
+    position: static;
+    display: inline-block;
+    margin-left: 10px;
+}
+.left {
+    margin-top: 5px;
+    margin-left: 12.0%;
+}
+.center {
+    display: flex;
+    align-items: center;
+}
+/* END: ed8c6549bwf9 */
