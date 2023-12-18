@@ -5,19 +5,9 @@ body {
     padding: 0px;
     background-color: #f7f5f5;
 }
-li {
-    display: inline-block;
-    font-size: 30px;
-    padding: 30px;
-}
 
 p {
     margin: 0;
-}
-
-ul {
-    margin: 0 10%;
-    padding: 2% 0 0;
 }
 
 .blue {
@@ -70,17 +60,17 @@ ul {
     background-image: url(img/header-bg.png);
     background-position: center;
     background-size: cover;
-    box-sizing: border-box;
-    width: 1340px;
-    height: 600px;
+    width: 100%; /* This will make the header the same width as the viewport */
+    height: 100vh; /* This will make the header the same height as the viewport */
 }
 
+/* Start for nav bar css */
 .nav {
     float: right;
     color: #ffffff;
     font-weight: 300;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 7px;
     position: relative;
     transition: color 0.3s ease-in-out;
 }
@@ -89,6 +79,44 @@ ul {
     color: #2d79ec;
     transform: scale(1.1);
 }
+
+li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+li a:hover,
+li a:active {
+    color: #2d79ec;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 17%;
+    background-color: transparent;
+    padding: 5px 0; /* Adjust this line to change the padding */
+    margin-top: -50px;
+    z-index: 1000; /* Add this line */
+    transition: background-color 0.5s ease;
+}
+
+.navbar-not-top {
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    margin: 0 10%;
+    padding: 2% 0 0;
+}
+
+li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 30px;
+}
+/* End for navbar css */
 
 .row::after {
     clear: both;
@@ -116,18 +144,17 @@ ul {
 
 
 #title {
-    font-size: 100px;
+    font-size: 125px;
     line-height: 1;
     margin: 0 17.50%;
-    padding: 4% 0 9%;
+    padding: 10% 0 9%;
     text-align: center;
 }
 
 .section {
-    box-sizing: border-box;
     background: #060609;
-    width: 1340px;
-    height: 550px;
+    width: 100%;
+    height: 100vh;
     position: relative;
 }
 #holderwhite {
@@ -190,11 +217,10 @@ ul {
     height: 226px;
 }
 .footer{
-    box-sizing: border-box;
+    background-size: cover;
     background-image: url("img/footerbg.png");
     background-repeat: no-repeat;
-    width: 1340px;
-    height: 250px;
+    width: 100%;
     position: absolute;
 }
 
@@ -213,31 +239,50 @@ ul {
 }
 
 .rectanglepic {
-    background: #d9d9d9;
-    width: 300px; /* 328 */
+    width: 250px; /* 328 */
     height: 200px; /* 293 */
     margin: auto; /* Add this line */
 }
+
+#davepic {
+    background-image: url('img/dave.png');
+    background-size: cover; /* This will make sure the image covers the entire div */
+    background-position: center; /* This will center the image in the div */
+}
+
+#gillpic {
+    background-image: url('img/gill.jpg');
+    background-size: cover; /* This will make sure the image covers the entire div */
+    background-position: center; /* This will center the image in the div */
+}
+
+#drewpic {
+    background-image: url('img/drew.png');
+    background-size: 80%; /* This will make sure the image covers the entire div */
+    background-position: center; /* This will center the image in the div */
+    background-repeat: no-repeat;
+}
+
 .recname {
     color: #000000;
     text-align: center;
-    font-family: 'SairaCondensed-Regular';
+    font-family: 'Saira Condensed', sans-serif;
     font-size: 25px;
     font-weight: 400;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 .recrole {
     color: #000000;
     text-align: center;
-    font-family: 'SairaCondensed-Regular';
+    font-family: 'Saira Condensed', sans-serif;
     font-size: 20px;
     font-weight: 100;
-    margin-top: 5px;
+    margin-top: -5px;
 }
 
 #footerletter{
     text-align: left;
-    font-family: 'SairaCondensed-Bold', sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
     font-size: 55px;
     line-height: 105.46%;
     font-weight: 700;
@@ -264,7 +309,7 @@ ul {
 .mailname {
     color: #ffffff;
     text-align: left;
-    font-family: 'SairaCondensed';
+    font-family: 'Saira Condensed', sans-serif;
     font-size: 15px;
     font-weight: 100;
     position: static;
@@ -275,8 +320,15 @@ ul {
     margin-top: 5px;
     margin-left: 12.0%;
 }
-.center {
-    display: flex;
-    align-items: center;
+
+.footer-info {
+    color: #f5f5ff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 10px;
+
 }
 /* END: ed8c6549bwf9 */

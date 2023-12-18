@@ -9,13 +9,16 @@
     </head>
     <body>
         <header class="header">
-            <nav style="font-size: 30px; margin-top: -40px;">
+            <nav class="navbar">
                 <ul>
-                    <li style="color: #f5f5f5; font-weight: 550; margin-top: 20px;">phpDavao</li>
-                    <li class="nav">Contact Us</li>
-                    <li class="nav">Calendar</li>
-                    <li class="nav">Communities</li>
-                    <li class="nav">Home</li>
+                    <li class="hover" style="color: #ffffff; font-weight: 550; font-size: 25px;">
+                        <img src="img/logo-tc.png" style="margin-right: 10px; margin-bottom: 5px; width: 10%; vertical-align: middle;"/>
+                        TECH-CONNECT
+                    </li>
+                    <li class="nav"><a href="contact.html">Contact Us</a></li>
+                    <li class="nav"><a href="calendar.html">Calendar</a></li>
+                    <li class="nav"><a href="communities.html">Communities</a></li>
+                    <li class="nav"><a href="index.html" style="color: #2d79ec;">Home</a></li>
                 </ul>
             </nav>
         </header>
@@ -89,6 +92,15 @@
                 With no discrimination for they believe that each one has its own skill."
             </p>
             <p class="footer-info">All rights reserved &copy; 2023</p>
-            </footer>
-        </footer>  
+        </footer>
+        <script>
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.pageYOffset > 0) {
+                    navbar.classList.add('navbar-not-top');
+                } else {
+                    navbar.classList.remove('navbar-not-top');
+                }
+            });
+        </script>  
     </body>

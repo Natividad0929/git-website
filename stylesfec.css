@@ -18,20 +18,55 @@ body {
 
 .nav {
     float: right;
-    color: #f5f5ff;
+    color: #ffffff;
     font-weight: 300;
-    font-size: 15px;
-    margin-top: 35px;
+    font-size: 20px;
+    margin-top: 7px;
     position: relative;
-    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav:hover {
-    text-decoration: underline;
-    animation: underline-animation 0.3s ease-in-out;
-    transition: text-decoration 0.3s ease-in-out;
+    color: #2d79ec;
+    transform: scale(1.1);
 }
 
+li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+li a:hover,
+li a:active {
+    color: #2d79ec;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 17%;
+    background-color: #060609;
+    padding: 5px 0; /* Adjust this line to change the padding */
+    margin-top: -50px;
+    z-index: 1000; /* Add this line */
+    transition: background-color 0.5s ease;
+}
+
+.navbar-not-top {
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    margin: 0 10%;
+    padding: 2% 0 0;
+}
+
+li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 30px;
+}
 
 .custom-section {
     background-color: #060609;
@@ -41,16 +76,6 @@ body {
     position: relative;
 }
 
-.header li {
-    display: inline-block;
-    padding: 10px;
-    padding-left: 20px;
-}
-
-.header ul {
-    padding: 1% 0 0;
-    margin: 0 10%;
-}
 
 .goalholder {
     box-sizing: border-box;
