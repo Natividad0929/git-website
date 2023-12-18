@@ -38,12 +38,13 @@ body, html {
   margin-right: auto;
   color: white;
   padding-left: 10px;
-  font-size: 27px;
+  font-size: 1.7rem;
   font-weight: 500;
 }
 
 .logo {
   cursor: pointer;
+  width: 3.5em;
 }
 
 .nav-links {
@@ -53,7 +54,7 @@ body, html {
 .nav-links li {
   display: inline-block;
   padding: 0px 20px;
-  font-size: 20px;
+  font-size: 1.3rem;
   text-align: center;
 }
 
@@ -70,7 +71,7 @@ body, html {
 body{
   display: flex;
   min-height: 100vh;
-  background: #ffffff;
+  background-image: url("bg.jpg");
 }
 .wrapper{
   display: flex;
@@ -143,7 +144,7 @@ header .current-date{
   transition: 0.5s; /* animation */
 }
 .days li.inactive{
-  color: #aaa;
+  color: #a8a8a8;
 }
 .days li::before{
   position: absolute;
@@ -180,9 +181,9 @@ header .current-date{
 } 
   
 .calendar-container {
-  width: 50vw;
+  width: 40vw;
   min-height: 53vh;
-  background: #fff;
+  background: #ffffffcc;
   border-radius: 10px;
   position: relative;
   transition: 0.5s;
@@ -206,30 +207,14 @@ header .current-date{
   margin-bottom: 10px;
 }
 #sidebar.open {
-  width: 20%;
-  padding: 30px;
+  width: 30%;
+  padding: 2.5vw;
   color: #6e99da;
-  background: #1a1a1a;
-}
-#sidebar::-webkit-scrollbar {
-  width: 10px;
-}
-
-#sidebar::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-#sidebar::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 2px;
-}
-
-#sidebar::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #1b1b1bb9;
 }
 .calendar-container.sidebar-open {
-  margin-left: -15vw;
-  width: 70%;
+  margin-left: -17vw;
+  width: 60%;
 }
 #event-list li {
   position: relative;
@@ -283,7 +268,7 @@ header .current-date{
     overflow: hidden;
   }
   .calendar-container{
-    min-width: 100%;
+    min-width: 100vw;
   }
   #sidebar.open {
     height: 60%;
@@ -303,4 +288,39 @@ header .current-date{
   #header-title{
     font-size: 1.3rem;
   }
+  /* Navbar CSS */
+  
+  .navbar-header h3 {
+    margin-right: auto;
+    color: white;
+    padding-left: 10px;
+    font-size: .6rem;
+    font-weight: 500;
+  }
+
+  .logo{
+    width: 1.5em;
+  }
+
+  .nav-links {
+    margin-left: 7vw;
+  }
+  
+  .nav-links li {
+    display: inline;
+    padding: 0px 2vw;
+    font-size: .75rem;
+    text-align: center;
+  }
+  
+  .nav-links a {
+    transition: all 0.3s ease 0s;
+    color: white;
+  }
+  
+  .nav-links a:hover {
+    color: blue;
+  }
+  
+  /* End of Navbar CSS */
 }
