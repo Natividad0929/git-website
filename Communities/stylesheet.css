@@ -1,0 +1,153 @@
+body {
+    font-family: 'Saira Condensed', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h2, p {
+    margin: 0;
+}
+
+p {
+    text-align: left;
+    font-size: 20px;
+    margin: 0.25em;
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header ul {
+    margin: 0 10%;
+    padding: 20px 0;
+}
+
+header li {
+    display: inline-block;
+    padding: 8px 24px;
+}
+
+.nav {
+    float: right;
+    font-size: 30px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 103px 7.5% 0;
+}
+
+.flex-item {
+    background-color: #808080;
+    text-align: center;
+    border-radius: 20px;
+    margin: 32px;
+    height: 470px;
+    width: 320px;
+}
+
+.banner {
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 60%;
+    width: 100%;
+}
+
+.info {
+    height: 168px;
+    margin-top: -7px;
+    padding: 10px;
+}
+
+.info span {
+    cursor: pointer;
+}
+
+.overlay-wrap {
+    background-color: #00000080;
+    color: #00000000;
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.overlay-box {
+    background-color: red;
+    margin: 5.5% auto;
+    height: 80%;
+    width: 80%;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid.col {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 100%;
+    margin: 0 60px;
+}
+
+.grid.left-row {
+    grid-template-rows: 2fr 3fr;
+}
+
+.grid.right-row {
+    grid-template-rows: 1fr 4fr;
+}
+
+.organization {
+    background-color: #ffff00;
+}
+
+.description {
+    background-color: #00ffff;
+}
+
+.events-list {
+    background-color: #00ff00;
+    position: relative;
+    font-size: 50px;
+}
+
+.events-list > span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.exit {
+    display: block;
+    float: right;
+    margin: 20px;
+    width: 20px;
+}
+
+#logo {
+    vertical-align: middle;
+    height: 48px;
+    margin-right: 20px;
+}
+
+#title {
+    font-size: 40px;
+    padding: 0 16px;
+}
