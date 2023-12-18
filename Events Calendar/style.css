@@ -1,6 +1,9 @@
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
 *{
   margin: 0;
   padding: 0;
@@ -13,11 +16,51 @@ body, html {
   height: 100%;
   width: 100%;
 }
+.header {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 20px;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+.nav-item {
+  color: #f5f5f5;
+  font-weight: 550;
+}
+.nav-link {
+  color: #f5f5f5;
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  animation: underline-animation 0.3s ease-in-out;
+  transition: text-decoration 0.3s ease-in-out;
+}
+.right-nav {
+  display: flex;
+  gap: 30px; /* Adjust this value to increase or decrease the space between the right-side nav items */
+}
+#header-title{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #f5f5f5;
+  text-decoration: none;
+}
 body{
   display: flex;
-  padding: 0 10px;
   min-height: 100vh;
-  background: #9B59B6;
+  background: #ffffff;
 }
 .wrapper{
   display: flex;
@@ -145,6 +188,7 @@ header .current-date{
   transition: 0.5s;
   color: #ffffff00;
   padding: -50px;
+  overflow: auto;
 }
 #sidebar p{
   font-size: 1.5rem;
@@ -156,6 +200,22 @@ header .current-date{
   padding: 30px;
   color: #6e99da;
   background: #1a1a1a;
+}
+#sidebar::-webkit-scrollbar {
+  width: 10px;
+}
+
+#sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
+}
+
+#sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 .calendar-container.sidebar-open {
   margin-left: -20%;
@@ -171,9 +231,11 @@ header .current-date{
   color: #fff;
   border-radius: 5px;
   z-index: 1000;
+  max-width: 30vw;
 }
 #tooltip img {
-  width: 100%;
+  width: 100%; /* This will make the image take the full width of its container */
+  height: auto; /* This will keep the aspect ratio of the image */
 }
 #tooltip p {
   margin: 10px 0;
@@ -191,8 +253,45 @@ header .current-date{
 }
 #event-list li a, #event-list li p {
   color: inherit; /* Make the text color inherit from the parent element */
+  text-decoration: none;
 }
 #sidebar.open #event-list li a {
   color: #b3b3b3; /* Replace #yourColor with the color you want */
   text-decoration: none;
+}
+@media (max-width: 768px) { /* Adjust the value as needed */
+  #sidebar {
+    bottom: 0; /* Change from 'top' to 'bottom' */
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: height 0.5s;
+    overflow: hidden;
+  }
+  .calendar-container{
+    min-width: 100%;
+  }
+  #sidebar.open {
+    height: 60%;
+    width: 100%;
+    padding: 30px;
+  }
+  .calendar-container.sidebar-open {
+    margin-left: 0;
+    margin-bottom: 30%;
+  }
+  #tooltip {
+    max-width: 60vw;
+  }
+  .nav-link {
+    font-size: .7rem;
+  }
+  .right-nav {
+    display: flex;
+    gap: 1.5vw; /* Adjust this value to increase or decrease the space between the right-side nav items */
+  }
+  #header-title{
+    font-size: 1.3rem;
+  }
 }
