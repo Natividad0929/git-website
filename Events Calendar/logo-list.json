@@ -1,0 +1,30 @@
+[
+    {
+        "org": "DICE",
+        "logo_link": "logos/dice.png"
+    },
+    {
+        "org": "IDEAS Davao",
+        "logo_link": "logos/ideas.png"
+    },
+    {
+        "org": "Defi Davao",
+        "logo_link": "logos/defi.png"
+    },
+    {
+        "org": "AWSUG Davao",
+        "logo_link": "logos/AWSUG.jpg"
+    },
+    {
+        "org": "GDG Davao",
+        "logo_link": "logos/gdg.png"
+    },
+    {
+        "org": "DevCon",
+        "logo_link": "logos/devcon.png"
+    },
+    {
+        "org": "SPARCS",
+        "logo_link": "logos/sparcs.jpg"
+    }
+]

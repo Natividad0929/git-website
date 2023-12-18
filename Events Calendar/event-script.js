@@ -4,6 +4,18 @@ prevNextIcon = document.querySelectorAll(".icons span");
 prevDays = document.querySelectorAll(".prevDays");
 nextMonthDays = document.querySelectorAll(".nextMonthDays");
 
+let logos = [];
+
+// Fetch logos from a JSON file
+fetch('logo-list.json')
+    .then(response => response.json())
+    .then(data => {
+        logos = data.map(logolist => {
+                return { org: logolist.org, logo_link: logolist.logo_link };
+        });
+    })
+    .catch(error => console.error('Error:', error));
+
 let events = [];
 
 // Fetch events from a JSON file
@@ -13,7 +25,7 @@ fetch('events.json')
     // Convert date strings to Date objects and store them in the events array
     events = data.map(event => {
       let date = new Date(event.date);
-      return { date: date, name: event.name, org: event.org, link: event.link }; // Assuming 'org' is the property in your JSON data that holds the organization name
+      return { date: date, name: event.name, org: event.org, link: event.link, desc: event.description }; // Assuming 'org' is the property in your JSON data that holds the organization name
     });
 
     // Render the calendar after the events are loaded
@@ -90,8 +102,13 @@ const attachDayEvents = () => {
                 let tooltipText = document.getElementById('tooltip-text');
               
                 if (sidebar.classList.contains('open')) {
-                  tooltipImg.src = "gdg.png";
-                  tooltipText.textContent = `Sample text for ${event.name}`;
+                  // Find the logo link for the event's organization
+                  let logoLink = logos.find(logo => logo.org === event.org).logo_link;
+              
+                  // Set the logo link as the image source
+                  tooltipImg.src = logoLink;
+              
+                  tooltipText.textContent = event.desc;
               
                   const containerRect = document.querySelector('.calendar-container').getBoundingClientRect();
               
@@ -109,7 +126,7 @@ const attachDayEvents = () => {
                   tooltip.style.display = 'block';
                   tooltip.style.top = (e.clientY + 10) + 'px'; // 10 is for a little space between the tooltip and the cursor
                 }
-            });
+              });
               
             eventLi.addEventListener('mouseout', function() {
                 let tooltip = document.getElementById('tooltip');
