@@ -22,17 +22,40 @@
         <div id="card-container"></div>
     </body>
     <script>
-        const container = document.getElementById('card-container');
-    
-        for (let i = 0; i < 14; i++) {
-            const card = document.createElement('div');
-            card.classList.add('card');
-            card.dataset.community = i;
-            card.addEventListener('click', function() {
-                // Replace this with code to show a popup with details about the community
-                alert(`You clicked on community ${this.dataset.community}`);
-            });
-            container.appendChild(card);
-        }
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const container = document.getElementById('card-container');
+        
+            for (let i = 0; i < 14; i++) {
+                const card = document.createElement('div');
+                card.classList.add('card');
+                card.dataset.community = i;
+                container.appendChild(card);
+            
+                const popup = document.createElement('div');
+                popup.id = `popup-${i}`;
+                popup.classList.add('popup');
+                popup.innerHTML = `
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <p>You clicked on community ${i}</p>
+                    </div>
+                `;
+                popup.querySelector('.close').addEventListener('click', function() {
+                    popup.classList.remove('show');
+                });
+                document.body.appendChild(popup);
+            
+                card.addEventListener('click', function() {
+                    const rect = this.getBoundingClientRect();
+                    popup.style.top = `${rect.top}px`;
+                    popup.style.left = `${rect.left}px`;
+                    popup.style.width = `${rect.width}px`;
+                    popup.style.height = `${rect.height}px`;
+                    requestAnimationFrame(() => {
+                        popup.classList.add('show');
+                    });
+                });
+            }
+        });
     </script>
 </html>
