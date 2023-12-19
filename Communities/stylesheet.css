@@ -23,6 +23,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 9999;
 }
 
 header ul {
@@ -54,6 +55,7 @@ header li {
     margin: 32px;
     height: 470px;
     width: 320px;
+    position: relative;
 }
 
 .banner {
@@ -62,30 +64,59 @@ header li {
     border-top-right-radius: 20px;
     height: 60%;
     width: 100%;
+    z-index: 1;
 }
 
 .info {
     height: 168px;
     margin-top: -7px;
     padding: 10px;
+    z-index: 1;
 }
 
 .info span {
     cursor: pointer;
 }
 
-.overlay-wrap {
-    background-color: #00000080;
-    color: #00000000;
-    display: block;
-    position: fixed;
+.overlay-container {    
     height: 100%;
-    width: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    transition: 0.5s;
+    z-index: -99;
+    transform: scale(0); /* Start small */
+    transition: transform 0.5s ease-in-out; /* Animate size change */
+}
+
+.overlay-container.popped {
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+}
+
+.overlay-wrap {
+    background-color: #00000000;
+    color: #00000000;
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.overlay-wrap.popped {
+    opacity: 100%;;
 }
 
 .overlay-box {
