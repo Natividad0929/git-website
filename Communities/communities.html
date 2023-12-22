@@ -124,11 +124,16 @@
             }*/
 
             // Get all the overlay containers
-            const overlays = document.querySelector('.overlay-container');
-            const rect = overlays.getBoundingClientRect();
-            const x = rect.left + window.scrollX;
-            const y = rect.top + window.scrollY;
-            overlays.style.transformOrigin = `${x}px ${y}px`;
+            window.onload = function() {
+                const overlays = document.querySelectorAll('.overlay-container');
+                overlays.forEach(overlay => {
+                    const rect = overlay.getBoundingClientRect();
+                    const x = rect.left + window.scrollX;
+                    const y = rect.top + window.scrollY;
+            
+                    overlay.style.transformOrigin = `${x}px ${y}px`;
+                });
+            };
 
             let popupButtons = document.querySelectorAll("#read-more");
             let closeButtons = document.querySelectorAll(".exit");
