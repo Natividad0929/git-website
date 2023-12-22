@@ -34,7 +34,7 @@
                             <div class="grid col">
                                 <div class="grid left-row">
                                     <section class="organization">
-                                        <img src="ideasdavao.png">
+                                        <img src="images/ideasdavao/ideasdavao.png">
                                     </section>
                                     <section class="description">
                                         <p>Innovation and Development Accelerators Consortium for Start-ups (IDEAS) facilitates collaborative initiatives to improve incubation programs, mentoring, networking, fundraising, and media exposure for startups.</p>
@@ -368,28 +368,34 @@
             </div>
         </div>
         <script>
+
             let popupButtons = document.querySelectorAll(".read-more");
             let closeButtons = document.querySelectorAll(".exit");
+            let popups = document.querySelectorAll(".overlay-container");
+            let anchors = document.querySelectorAll(".read-more");
+
+            function assignTransformOrigin(popup, rect) {
+                const x = rect.left;
+                const y = rect.top;
+
+                console.log(rect.top);
+
+                popup.style.transformOrigin = `${x}px ${y}px`;
+            }
+
             popupButtons.forEach((button, index) => {
                 button.addEventListener("click", () => {
-                    let popup = document.querySelectorAll(".overlay-container")[index];
+                    let popup = popups[index];
+                    let anchor = anchors[index];
                     let popupBox = popup.querySelector(".overlay-wrap");
                 
-                    if (!popup.dataset.x || !popup.dataset.y) {
-                        const rect = popup.getBoundingClientRect();
-                        const x = rect.left + window.scrollX;
-                        const y = rect.top + window.scrollY;
-                    
-                        popup.dataset.x = x;
-                        popup.dataset.y = y;
-                    }
-                
-                    popup.style.transformOrigin = `${popup.dataset.x}px ${popup.dataset.y}px`;
-                
+                    assignTransformOrigin(popup, anchor.getBoundingClientRect());
+
                     popup.classList.add("popped");
                     popupBox.classList.add("popped");
                 });
             });
+
             closeButtons.forEach((button, index) => {
                 button.addEventListener("click", () => {
                     let popup = document.querySelectorAll(".overlay-container")[index];
@@ -398,6 +404,24 @@
                     popupBox.classList.remove("popped");
                 });
             });
+
+            let lastScrollY = window.scrollY;
+
+            function updateTransformOrigins() {
+                if (window.scrollY !== lastScrollY) {
+                    popupButtons.forEach((button, index) => {
+                        let anchor = anchors[index];
+                        assignTransformOrigin(popups[index], anchor.getBoundingClientRect());
+                    });
+                
+                    lastScrollY = window.scrollY;
+                }
+            
+                requestAnimationFrame(updateTransformOrigins);
+            }
+
+            updateTransformOrigins();
+            
         </script>
     </body>
 </html>

@@ -50,7 +50,7 @@ header li {
 }
 
 .flex-item {
-    background-color: #808080;
+    background-color: #ebebeb;
     text-align: center;
     border-radius: 20px;
     box-shadow: 10px 10px 40px;
@@ -58,6 +58,11 @@ header li {
     height: 470px;
     width: 320px;
     position: relative;
+    transition: transform 0.3s ease;;
+}
+
+.read-more{
+    color: rgb(64, 165, 224);
 }
 
 .banner {
