@@ -1,4 +1,5 @@
 body {
+    background-color: darkgray;
     font-family: 'Saira Condensed', sans-serif;
     margin: 0;
 }
@@ -23,7 +24,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 1;
 }
 
 header ul {
@@ -52,6 +53,7 @@ header li {
     background-color: #808080;
     text-align: center;
     border-radius: 20px;
+    box-shadow: 10px 10px 40px;
     margin: 32px;
     height: 470px;
     width: 320px;
@@ -70,7 +72,7 @@ header li {
 .info {
     height: 168px;
     margin-top: -7px;
-    padding: 10px;
+    padding: 5px 10px;
     z-index: 1;
 }
 
@@ -103,24 +105,25 @@ header li {
 }
 
 .overlay-wrap {
-    background-color: #00000000;
-    color: #00000000;
+    background-color: #00000080;
     display: block;
     height: 100%;
     width: 100%;
-    opacity: 0%;;
+    opacity: 0%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+
 }
 
 .overlay-wrap.popped {
-    opacity: 100%;;
+    opacity: 100%;
 }
 
 .overlay-box {
-    background-color: red;
+    background-color: white;
+    text-align: left;
     margin: 5.5% auto;
     height: 80%;
     width: 80%;
@@ -132,42 +135,53 @@ header li {
 
 .grid.col {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     height: 100%;
-    margin: 0 60px;
+    margin-left: 60px;
 }
 
 .grid.left-row {
-    grid-template-rows: 2fr 3fr;
+    grid-template-rows: 2fr 2fr 1fr;
 }
 
 .grid.right-row {
     grid-template-rows: 1fr 4fr;
+    background-size: cover;
 }
 
 .organization {
-    background-color: #ffff00;
-}
-
-.description {
-    background-color: #00ffff;
-}
-
-.events-list {
-    background-color: #00ff00;
     position: relative;
-    font-size: 50px;
 }
 
-.events-list > span {
+.organization > img {
     position: absolute;
     bottom: 0;
     left: 0;
+    height: 100%;
+}
+
+.organization > span {
+    position: absolute;
+    font-size: 12.5vh;
+    line-height: 256%;
+    left: 336px;
+}
+
+.description > p {
+    font-size: 1.5em;
+    padding-right: 60px;
+}
+
+.platform {
+    padding: 20px 0;
+}
+
+.platform > img {
+    margin: 0 20px;
 }
 
 .exit {
-    display: block;
-    float: right;
+    position: absolute;
     margin: 20px;
     width: 20px;
 }
@@ -181,4 +195,55 @@ header li {
 #title {
     font-size: 40px;
     padding: 0 16px;
+}
+
+#ideas {
+    background-image: url("images/ideasdavao/ideasdavao-2.jpg");
+    background-position: 55%;
+
+}
+
+#dice {
+    background-image: url("images/dice/dice-2.jpg");
+}
+
+#sparcs {
+    background-image: url("images/sparcs/sparcs-2.jpg");
+    background-position: 100%;
+}
+
+#ddi {
+    background-image: url("images/ddi/ddi-2.jpg");
+}
+
+#dgdc {
+    background-image: url("images/dgdc/dgdc-2.jpg");
+    background-position: 40%;
+}
+
+#php {
+    background-image: url("images/phpdavao/phpdavao-2.jpeg");
+    background-position: 60%;
+}
+
+#uxdavao {
+    background-image: url("images/uxdavao/uxdavao-2.jpg");
+    background-position: 55%;
+}
+
+#davaojs {
+    background-image: url("images/davaojs/davaojs-2.jpg");
+}
+
+#davaodefi {
+    background-image: url("images/davaodefi/davaodefi-2.jpg");
+}
+
+#gdgdavao {
+    background-image: url("images/gdgdavao/gdgdavao-2.jpg");
+    background-position: 70%;
+}
+
+#awsugph {
+    background-image: url("images/awsugph/awsugph-2.jpg");
 }
