@@ -13,9 +13,14 @@
 body, html {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
+body{
+  display: inline;
+  background: #ffffff;
+}
+
 /* Navbar CSS */
 
 .navbar-header li, a {
@@ -23,7 +28,7 @@ body, html {
 }
 
 .navbar-header {
-  position: fixed;
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -67,17 +72,15 @@ body, html {
 }
 
 /* End of Navbar CSS */
-body{
-  display: flex;
-  min-height: 100vh;
-  background: #ffffff;
-}
+
+/* Calendar CSS */
 .wrapper{
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 10px;
-  min-height: 100vh;
+  min-height: 100%;
   width: 100vw;
 }
 .wrapper header{
@@ -178,7 +181,6 @@ header .current-date{
 .days li.event-day.active:hover::before{
   background: radial-gradient(#3a5a83 60%, #000000 60%);
 } 
-  
 .calendar-container {
   width: 50vw;
   min-height: 53vh;
@@ -187,6 +189,9 @@ header .current-date{
   position: relative;
   transition: 0.5s;
 }
+/* End of Calendar CSS */
+
+/* Sidebar CSS */
 #sidebar {
   position: absolute;
   top: 0;
@@ -234,6 +239,9 @@ header .current-date{
 #event-list li {
   position: relative;
 }
+/* End of Sidebar CSS */
+
+/* Tooltip CSS */
 #tooltip {
   position: absolute;
   padding: 10px;
@@ -272,6 +280,9 @@ header .current-date{
   color: #b3b3b3; /* Replace #yourColor with the color you want */
   text-decoration: none;
 }
+/* End of Tooltip CSS */
+
+/* Media Queries */
 @media (max-width: 768px) { /* Adjust the value as needed */
   #sidebar {
     bottom: 0; /* Change from 'top' to 'bottom' */
@@ -304,3 +315,4 @@ header .current-date{
     font-size: 1.3rem;
   }
 }
+/* End of Media Queries */
