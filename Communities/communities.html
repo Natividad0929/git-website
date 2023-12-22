@@ -150,31 +150,33 @@
                 document.getElementById("popup"+n).style.color = "#00000000";
             }*/
 
-            // Get all the overlay containers
-            window.onload = function() {
-                const overlays = document.querySelectorAll('.overlay-container');
-                overlays.forEach(overlay => {
-                    const rect = overlay.getBoundingClientRect();
-                    const x = rect.left + window.scrollX;
-                    const y = rect.top + window.scrollY;
-            
-                    overlay.style.transformOrigin = `${x}px ${y}px`;
-                });
-            };
-
             let popupButtons = document.querySelectorAll("#read-more");
             let closeButtons = document.querySelectorAll(".exit");
-            popupButtons.forEach(button => {
+
+            popupButtons.forEach((button, index) => {
                 button.addEventListener("click", () => {
-                    let popup = document.querySelector(".overlay-container");
+                    let popup = document.querySelectorAll(".overlay-container")[index];
                     let popupBox = popup.querySelector(".overlay-wrap");
+                
+                    if (!popup.dataset.x || !popup.dataset.y) {
+                        const rect = popup.getBoundingClientRect();
+                        const x = rect.left + window.scrollX;
+                        const y = rect.top + window.scrollY;
+                    
+                        popup.dataset.x = x;
+                        popup.dataset.y = y;
+                    }
+                
+                    popup.style.transformOrigin = `${popup.dataset.x}px ${popup.dataset.y}px`;
+                
                     popup.classList.add("popped");
                     popupBox.classList.add("popped");
                 });
             });
-            closeButtons.forEach(button => {
+
+            closeButtons.forEach((button, index) => {
                 button.addEventListener("click", () => {
-                    let popup = document.querySelector(".overlay-container");
+                    let popup = document.querySelectorAll(".overlay-container")[index];
                     let popupBox = popup.querySelector(".overlay-wrap");
                     popup.classList.remove("popped");
                     popupBox.classList.remove("popped");
