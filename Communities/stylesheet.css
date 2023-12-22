@@ -39,7 +39,7 @@ header li {
 
 .nav {
     float: right;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .flex-container {
@@ -202,13 +202,13 @@ header li {
 }
 
 #logo {
-    vertical-align: middle;
+    vertical-align: text-bottom;
     height: 48px;
     margin-right: 20px;
 }
 
 #title {
-    font-size: 40px;
+    font-size: 32px;
     padding: 0 16px;
 }
 
