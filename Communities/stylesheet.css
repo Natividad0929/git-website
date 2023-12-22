@@ -50,7 +50,7 @@ header li {
 }
 
 .flex-item {
-    background-color: #808080;
+    background-color: #ebebeb;
     text-align: center;
     border-radius: 20px;
     box-shadow: 10px 10px 40px;
@@ -58,6 +58,11 @@ header li {
     height: 470px;
     width: 320px;
     position: relative;
+    transition: transform 0.3s ease;;
+}
+
+.read-more{
+    color: rgb(64, 165, 224);
 }
 
 .banner {
@@ -150,7 +155,6 @@ header li {
 }
 
 .organization {
-    height: 30vh;
     position: relative;
 }
 
@@ -168,19 +172,13 @@ header li {
     left: 336px;
 }
 
-.description {
-    height: 30vh;
-    overflow: auto;
-}
-
 .description > p {
     font-size: 1.5em;
     padding-right: 60px;
 }
 
 .platform {
-    height: 10vh;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 
 .platform > img {
@@ -191,10 +189,6 @@ header li {
     position: absolute;
     margin: 20px;
     width: 20px;
-}
-
-.icon {
-    width: 7.5%;
 }
 
 #logo {
