@@ -155,6 +155,7 @@ header li {
 }
 
 .organization {
+    height: 30vh;
     position: relative;
 }
 
@@ -170,6 +171,11 @@ header li {
     font-size: 12.5vh;
     line-height: 256%;
     left: 336px;
+}
+
+.description {
+    height: 30vh;
+    overflow: auto;
 }
 
 .description > p {
@@ -189,6 +195,10 @@ header li {
     position: absolute;
     margin: 20px;
     width: 20px;
+}
+
+.icon {
+    width: 7.5%;
 }
 
 #logo {
