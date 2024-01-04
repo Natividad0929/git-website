@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo-tc.png">
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+</head>
+    <body class="element">
+    <header class="navbar">
+        <img src="img/logo-tc.png" class="logo" style="width: 3.5em;">
+        <h3 class="logo" style="color: white;">TECH-CONNECT</h3>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="communities.html">Community</a></li>
+                <li><a href="event-calendar.html">Calendar</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="grid">
+        <div>
+            <div class="title">
+                <h1 style="color: white;">EMPOWER DAVAO </h1>
+                <h1><span class="blue">TECH SCENE</span>, UNITE </h1>
+                <h1><span class="blue">COMMUNITIES</span></h1>
+            </div>
+        </div>
+        <div class="section grid-1">
+            <div class="section col1" style="padding-left: 12%; padding-bottom: 15%;">
+                <div class="vertical-line"></div>
+                <div class="features">
+                    <p style="font-size: 68px; font-weight: 600; "><span style="color:#e83439">| </span>TC<span style="color: gray">FEATURES</span></p>
+                    <p style="font-size: 28px;">
+                        Unlock boundless opportunities! Dive into the vibrant Davao's
+                        world of code with our Community Showcase and Events Calendar.
+                    </p>
+                </div>
+            </div>
+            <div class="section col1">
+                <div class="link"><a href="communities.html"><img src="img/people.png" class="iconimg" style="margin-bottom: 20px;"></a><p>Community Showcase</p></div>
+            </div> 
+            <div class="section col1">
+                <div class="link"><a href="event-calendar.html"><img src="img/calendar.png" class="iconimg" style="margin-bottom: 20px;"></a><p>Events Calendar</p></div>
+            </div>
+        </div>
+        <div class="section grid-2">
+            <div>
+                <img class="devfest-pic" src="img/devfest-pic.jpg"/>
+            </div>
+            <div class="section col1">
+                <div style="width: 80%; ">
+                    <p style="font-size: 40px; font-weight: 600; "><span style="color:#e83439">|  </span><span>OUR REASON? GOAL?</span></p>
+                    <p style="font-size: 23px; font-weight: 0;">
+                        Uniting our city under one dynamic online hub, we're 
+                        creating a bustling platform for 
+                        tech enthusiasts to shine. Explore, connect, and 
+                        witness the blossoming tech community as 
+                        we showcase talents, events, and innovations. 
+                        Together, let's elevate Davao's tech scene to new heights!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section grid-3">
+            <div>
+                <div class="rectanglepic" id="gillpic"></div>
+                <div class="recname" >
+                Gilean Cyrus Alanza </div>
+                <div class="recrole" >
+                Web Designer </div>
+            </div>
+            <div>
+                <h3 id="teamtext">MEET OUR TEAM</h3>
+                <div class="rectanglepic" id="davepic" style="margin-top: 30px;" ></div>
+                <div class="recname">
+                Deniel Dave Natividad </div>
+                <div class="recrole">
+                Web Designer </div>
+            </div>
+            <div>
+                <div class="rectanglepic" id="drewpic"></div>
+                <div class="recname">
+                Andrew Jerick Mante </div>
+                <div class="recrole">
+                Web Designer </div>
+            </div>
+        </div>
+        <div class="section footer grid-3">
+            <div class="container">
+                <h3 id="footertell" style="color: aliceblue;">SUPPORT YOUR LOCAL<span class="blue"><br> TECH COMMUNITIES</span></h3>
+                <img class="mail" src="img/location.png"/>
+                <p class="mailname" style="font-size: 18px;"> UP Mindanao, Tugbok,</p>
+                <p class="mailname" style="font-size: 18px; margin: 0 0 0 37px;"> Davao City, 8000 Davao del Sur</p>
+            </div>
+            <div style="margin: 10% 0 0 20%;">
+                <p class="footer-info" style="font-size: 25px; margin-bottom: -10px;">Email us at:</p>
+                <img class="mail" src="img/Frame.png"/>
+                <p class="mailname">dcnatividad1@up.edu.ph</p> <br>
+                <img class="mail" src="img/Frame.png"/>
+                <p class="mailname">ajmante@up.edu.ph</p> <br>
+                <img class="mail" src="img/Frame.png"/>
+                <p class="mailname">gcalanza@up.edu.ph</p>
+            </div>
+            <div class="container2">
+                <div style="display: flex; align-items: center;">
+                    <p style="color: aliceblue; font-size: 25px; font-weight: 300;padding-right: 10px;">TECH-CONNECT</p>
+                    <img src="img/logo-tc.png" class="logo" style="width: 2em;">
+                </div>            
+                <p class="footer-info">All rights reserved &copy; 2023</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.pageYOffset > 0) {
+                navbar.classList.add('navbar-not-top');
+            } else {
+                navbar.classList.remove('navbar-not-top');
+            }
+        });
+    </script>
+</body>
+</html>

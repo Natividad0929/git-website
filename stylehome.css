@@ -1,0 +1,291 @@
+/* Universal Selectors */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    font-family: 'Saira Condensed', sans-serif;
+    margin: 0px;
+    width: 100%;
+    background-color: #f7f5f5;
+    background: url('img/bgtest.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* End of Universal/Body Selectors */
+
+/* Navbar CSS */
+
+li, a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 12.5%;
+    /* background-color: transparent; */
+    background-color: rgba(0, 0, 0, 0.946);
+    height: 12vh;
+    width: 100%;
+    z-index: 100;
+}
+
+header h3 {
+    margin-right: auto;
+    color: white;
+    padding-left: 10px;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-links a {
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: blue;
+}
+
+/* End of Navbar CSS */
+
+/* Start of Grid YEEEEE */
+
+.grid {
+    display: grid;
+    grid-template-rows: 100% 60% 60% 63% 37%;
+    grid-gap: 40px;
+    margin: 0 12.5%;
+    height: 100vh;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 4fr 3fr 3fr;
+    gap: 10px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    gap: 10px; /* Optional: adds some space between the columns */
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px; /* Optional: adds some space between the columns */
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    margin: 0;
+    width: calc(100% + 20%); /* This is to compensate for the 12.5% margin on both sides */
+    position: relative;
+    left: -10%; /* This is to shift the footer to the left to align it with the viewport */
+} 
+
+/* End of Grid */
+
+
+/* Start of Section 1 */
+
+
+.title {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1;
+    margin: auto;
+    margin: 0 12.5%;
+    padding: 15% 0 9%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blue {
+    color: #1e90ff;
+}
+
+.features {
+    width: 400px;
+    height: 226px;
+}
+
+.col1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconimg {
+    height: 13vh;
+    position: relative;
+    overflow: visible;
+    filter: invert(1) brightness(100);
+    transition: transform 0.3s ease-in-out;
+}
+
+.iconimg:hover {
+    transform: scale(1.1);
+}
+
+.link {
+    font-size: 27px;
+    text-align: center;
+}
+
+.devfest-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#teamtext {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 7% 0;
+    letter-spacing: 5px;
+}
+
+.rectanglepic {
+    width: 225px; /* 328 */
+    height: 170px; /* 293 */
+    margin: auto; /* Add this line */
+    margin-top: 100px;
+}
+
+#davepic {
+    background-image: url('img/dave.png');
+    background-size: cover; /* This will make sure the image covers the entire div */
+    background-position: center; /* This will center the image 
+    in the div */
+}
+
+#gillpic {
+    background-image: url('img/gill.png');
+    background-size: cover; /* This will make sure the image covers the entire div */
+    background-position: center; /* This will center the image in the div */
+}
+
+#drewpic {
+    background-image: url('img/drew.png');
+    background-size: cover; /* This will make sure the image covers the entire div */
+    background-position: center; /* This will center the image in the div */
+    background-repeat: no-repeat;
+}
+
+.recname {
+    color: white;
+    text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 35px;
+}
+.recrole {
+    color: white;
+    text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: -5px;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.footer-info {
+    color: #f5f5ff;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.container {
+    margin: 10% 0 0 25%;
+ }
+
+.container2 {
+    margin: 30% 0 0 0;
+ }
+
+
+#footertell {
+    font-size: 35px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.mail {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+    top: 6px;
+    margin: 10px 0 0 0 ;
+}
+
+.mailname {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    position: static;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+.logo-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.navbar {
+    transition: background-color 0.5s ease;
+}
+
+.navbar-not-top {
+    background-color: rgba(0, 0, 0, 0.5);
+ }

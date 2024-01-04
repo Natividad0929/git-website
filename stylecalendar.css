@@ -1,0 +1,325 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Saira Condensed', sans-serif;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+/* Navbar CSS */
+
+.navbar-header li, a {
+  text-decoration: none;
+}
+
+.navbar-header {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: rgba(0, 0, 0, 0.946);
+  height: 12vh;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar-header h3 {
+  margin-right: auto;
+  color: white;
+  padding-left: 10px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  width: 15vw;
+}
+
+.logo {
+  cursor: pointer;
+  width: 3em;
+  padding-right: 5px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.nav-links a {
+  transition: all 0.3s ease 0s;
+  color: white;
+}
+
+.nav-links a:hover {
+  color: blue;
+}
+
+/* End of Navbar CSS */
+body{
+  display: flex;
+  min-height: 100vh;
+  background-image: url("bg.jpg");
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  min-height: 100vh;
+  width: 100vw;
+  padding-top: 70px;
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar{
+  padding: 20px;
+  width: 100%;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.17rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li{
+  transition: 0.5s; /* animation */
+}
+.days li.inactive{
+  color: #a8a8a8;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transition: 0.5s; /* animation */
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background: #c4ff80;
+}
+.days li:not(.active, .event-day):hover::before{
+  background: #f2f2f2;
+}
+.days li.event-day::before {
+  background: #6fadff;
+}
+.days li.event-day:hover::before {
+  background: #3a5a83;
+}
+.days li.event-day:hover {
+  color: #fff;
+}
+.days li.event-day.active::before{
+  background: radial-gradient(#6fadff 60%, #000000 60%);
+} 
+.days li.event-day.active:hover::before{
+  background: radial-gradient(#3a5a83 60%, #000000 60%);
+} 
+  
+.calendar-container {
+  width: 40vw;
+  min-height: 53vh;
+  background: #ffffffcc;
+  border-radius: 10px;
+  position: relative;
+  transition: 0.5s;
+}
+#sidebar {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 0;
+  height: 100%;
+  background: #00000000;
+  border-radius: 10px;
+  transition: 0.5s;
+  color: #ffffff00;
+  padding: -50px;
+  overflow: auto;
+}
+#sidebar p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#sidebar.open {
+  width: 30%;
+  padding: 2.5vw;
+  color: #6e99da;
+  background: #1b1b1bb9;
+}
+.calendar-container.sidebar-open {
+  margin-left: -17vw;
+  width: 60%;
+}
+#event-list li {
+  position: relative;
+}
+#tooltip {
+  position: absolute;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  z-index: 1000;
+  max-width: 30vw;
+}
+#tooltip img {
+  width: 100%; /* This will make the image take the full width of its container */
+  height: auto; /* This will keep the aspect ratio of the image */
+}
+#tooltip p {
+  margin: 10px 0;
+}
+#tooltip a {
+  color: #fff;
+}
+#tooltip-tip{
+  color: #6e99da;
+}
+#event-list li a {
+  margin: 0;
+  font-size: 1.3rem;
+}
+#event-list li p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+#event-list li a, #event-list li p {
+  color: inherit; /* Make the text color inherit from the parent element */
+  text-decoration: none;
+}
+#sidebar.open #event-list li a {
+  color: #b3b3b3; /* Replace #yourColor with the color you want */
+  text-decoration: none;
+}
+@media (max-width: 768px) { /* Adjust the value as needed */
+  #sidebar {
+    bottom: 0; /* Change from 'top' to 'bottom' */
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: height 0.5s;
+    overflow: hidden;
+  }
+  .calendar-container{
+    min-width: 100vw;
+  }
+  #sidebar.open {
+    height: 60%;
+    width: 100%;
+    padding: 30px;
+  }
+  .calendar-container.sidebar-open {
+    margin-left: 0;
+    margin-bottom: 30%;
+  }
+  #tooltip {
+    max-width: 60vw;
+  }
+  .nav-link {
+    font-size: .7rem;
+  }
+  #header-title{
+    font-size: 1.3rem;
+  }
+  /* Navbar CSS */
+  
+  .navbar-header h3 {
+    margin-right: auto;
+    color: white;
+    padding-left: 10px;
+    font-size: .6rem;
+    font-weight: 500;
+  }
+
+  .nav-links {
+    margin-left: 7vw;
+  }
+  
+  .nav-links li {
+    display: inline;
+    padding: 0px 2vw;
+    font-size: .75rem;
+    text-align: center;
+  }
+  
+  .nav-links a {
+    transition: all 0.3s ease 0s;
+    color: white;
+  }
+  
+  .nav-links a:hover {
+    color: blue;
+  }
+  
+  /* End of Navbar CSS */
+}

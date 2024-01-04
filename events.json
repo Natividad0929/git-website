@@ -1,0 +1,86 @@
+[
+    {   
+        "date": "2022-12-18", 
+        "name": "From Ideas to Impact", 
+        "org": "IDEAS Davao",
+        "link": "https://www.facebook.com/ideasdavao/posts/pfbid025ZT8gueAM9hdNAYh9pmU8AuGCcrDKbVZ8XVwokpkxBAEXMSW1XgAa3iBCyw3ma1Ll?__cft__[0]=AZW2pW3aBITeknj-lfMzUjh9rPGWSShqv1C0iVAwb0bNRbiXMvI1nr3064FbHQVYUE7G6zT9FdvR6ad5JGhvh1RJwrUfvh9rjkvveQ4esN4aGAJ8dsKdPsQa7-wWd1vP8J_W5g2YKYJB8gC-DcowW3W6a5QlhCRN40JTM_H6yGFBPAXq-pEcs_j0c3Nhj9ql_7TyI8xgn7m31hG3Z4KBP3Wm&__tn__=%2CO%2CP-R",
+        "description": "Dive into the world of startups with an ask-me-anything style discussion featuring the co-founders of Founders Launchpad, and a special guest CEO from a top Philippine-based startup. If you're a founder or a co-founder of a Mindanao-based idea-stage startup, this is YOUR opportunity to gain insights, ask burning questions, and connect with industry leaders."
+    },
+    { 
+        "date": "2022-12-10", 
+        "name": "ICYMI: 'Figma Extended'", 
+        "org": "DICE",
+        "link": "https://www.facebook.com/dice.dvo/posts/pfbid02h7La3H37xxTrMrZyEKsERdDqsPysQqBNoc9Q3qvqXM9kZ4CF27wwccf96gF9k2a4l?__cft__[0]=AZUCz7Ldt5DFy5VAWdpizrkBzS2MX1sqPqyppCEEyDHyBsCDQBVkNKGBN7qlSX-HC95hdaVPGxbhPDIj00ZkdUQoZ7bWJXZhyz6PYEyhOtyNsywOvmry9PuXy5ZkCcH8fLUYiuGuDe8zOHKKk-4XpHAItj0--pvecwurYC5OVV8bTDb3xP6fRxWk3M0P2L-EbjMW1jMCfV3XYB3zzoR1iaKQ&__tn__=%2CO%2CP-R",
+        "description": "ICYMI: 'Figma Extended', a talk given by Ria Cordero, the founder and creative lead of DICE and Devcon creatives head, discussing Figma’s dynamic ecosystem of plugins"
+    },
+    { 
+        "date": "2022-12-9", 
+        "name": "Archway Meetup Philippines", 
+        "org": "Defi Davao",
+        "link": "https://www.facebook.com/davaodeficommunity/posts/pfbid0oaNE4ThMRJLThpf2LMt8kUdtamBKBCXwkXJ5U7hxBQtDrTkefmprcWdMKvaxk1Fgl?__cft__[0]=AZX5h1LmRKeAL0BIdIMLmOtWLk7iLKxI8v-W0TNvOQ_10ZrvLP60je-_G1T1aXRcCV2ho0VTl1WyZo224eg9R5UqwuXfp3HfTX2MwGQuD3oZAXpO88z4DvoNbjSwZkJcTYleL_1sAEdZ1wSAZfQ6ctJOKr5I7UDqO7o_4MZeVnHDyW_UuisEV5gWr72g1BH7o1nz2td7eRFV9XAovr03PzCK&__tn__=%2CO%2CP-y-R",
+        "description": "Archway is a new layer 1 blockchain on Cosmos, and its ecosystem is flourishing with numerous projects being built. All Filipino Tech Enthusiasts, Academics, Professionals and Developers! Join our event tailored for you! This is just an informal gathering with discussion, networking and sharing of ideas with communities and enthusiast."
+    },
+    { 
+        "date": "2022-12-6", 
+        "name": "AWS User Group Meetup", 
+        "org": "AWSUG Davao",
+        "link": "https://www.facebook.com/awsugdavao/posts/pfbid0FRiJcsiGbcym7ede673D7PQMwJQEveMiTzLuX9wZ6sgxUMZviMmBVSiZ9qG9b1p7l?__cft__[0]=AZUF5-BWD85bzKnM1twvk1N_QD47PoRsCWPQvmHJ5SI7Yb8beNX1CLDCKLfeklFs4HMhDExnFISNmpOrnE_GReb0b2Nz1QiPrDwvnvSdx2LWDHdPs_Ky43yNrPL2oGwa15Gw8iqf6Zl_LnR_zjiRw4Ep5xBsqOqMfEduaZFaaI_UuCQRI6sjp1vMnL4WRR1-kXU&__tn__=%2CO%2CP-R",
+        "description": "Attention AWS enthusiasts! Elevate your cloud game at our AWS User Group Meetup. Immerse yourself in a night of tech talks on December 6, 2023"
+    },
+    { 
+        "date": "2022-12-16", 
+        "name": "TensorFlow & Chill: Decoding the ABCs of Machine Learning", 
+        "org": "GDG Davao",
+        "link": "https://gdsc.community.dev/events/details/developer-student-clubs-ateneo-de-zamboanga-university-presents-tensorflow-amp-chill-decoding-the-abcs-of-machine-learning/",
+        "description": "Grab your popcorn and get ready for a tech-tastic time online of 'TensorFlow & Chill: Decoding the ABCs of Machine Learning' with machine learning celebrities Ms. Kristine Adlaon and Ms. Armielyn Obinguar on December 16, 2023"
+    },
+    { 
+        "date": "2022-12-04", 
+        "name": "Tech Kwentuhan Week 3: The Human Factor in Modern Times", 
+        "org": "DevCon",
+        "link": "https://www.facebook.com/devcondavao/posts/pfbid02P4EPi6dzm5K54dCinxUP2bTd1QNxDUZd97teRn4ddoRUMtJWXRP8ikh4ptNUVMy7l?__cft__[0]=AZXbOaeF9gVe_CVWIv2XBlZkEQOZaHwQcw2UUC0ZIBOJlxKNwpT1Kn5NLYamlKjkC3oYlFIIAjxwK1lk8G52i98tmUwibbif5d7eKiJjHz7tiHnl0A-5Zfu3LJZvrDujdI7GLPNkiwhUr6NoW4R_MCxGWDVJWJKxRJImSqDjDX1vzZmVcGQAGsVpBU5nanIRjHY&__tn__=%2CO%2CP-R",
+        "description": "Grahssel Dungca, the organizer of No-Code PH,Product PH and Agile PH will talk about how new tech and ways of working help us be more human and vice versa."
+    },
+    {
+        "date": "2022-12-13", 
+        "name": "Minecraft Hour of Code: Generation AI", 
+        "org": "DevCon",
+        "link": "https://www.facebook.com/bicolit.org/posts/pfbid0HzMBVBBjnoUYUcrv7SSLz1x7yApVQjcQ4KpJ8qDGefTvtW7L1BfvcKxHhfdNDoQyl?__cft__[0]=AZUw8pmNVTr4Ggo_7ZpOKoxHLFvor5nd0rWuCIK_M_OnvtANrGvXwXwZEXq7Xx6R4Fdxf3v9fdcs4AS9y9vUXyWtDUW4DOcaBs1QCZY792B0bb508pt6LWia1HrKu4_Q95W8ZjwwKRO4kgeqzZSJwIzCWKd0oNnVfI7FuwSd3uNNkNPWvzMHH0Vc7JRQn_l6T1YvyBOtm9lATg4E6a2iScgN&__tn__=%2CO%2CP-y-R",
+        "description": "Calling all kids aged 9-15 to embark on a coding adventure with “Minecraft Hour of Code: Generation AI”!"
+    },
+    { 
+        "date": "2022-12-10", 
+        "name": "Tech Kwentuhan Week 4: Figma Extended: A Dive into Design Using Figma Plugins", 
+        "org": "DevCon",
+        "link": "https://www.facebook.com/events/853957226737807/?ref=newsfeed",
+        "description": "Ria Cordero, the founder and creative lead of DICE and Devcon creatives head, will be discussing 'Figma Extended'. Whether you’re a novice or a seasoned designer, the design journey becomes seamless when coupled with a supportive community. Join the conversation and discover how Figma’s dynamic ecosystem of plugins fosters a community-driven approach to design."
+    },
+    { 
+        "date": "2022-12-18", 
+        "name": "Tech Kwentuhan Week 5: Year End", 
+        "org": "DevCon",
+        "link": "https://www.facebook.com/devcondavao/posts/pfbid02o7idBneBTxTvYDYhmUjRTsnXkyozaCyn6b35HszFyUByNM3bgKxLuqMqQd7WGnRXl?__cft__[0]=AZVAGlgv4X2odyW1BL6RBCj9NuwcsOnYF-p7_6JaX_nccQWWDzPh-AGqNA7Wi9nerUzB9AKggU4S6BtE1ZanmXW6Eo-RBZm63UnBLHXfdzfkQYGP4ndVefvyXna7qvhLvTacKpgQyTf3z_FN8xiDZT-ht_dKpomegcPJNpqyG1udG1sA6PaAQltX5QdwluVzPeE&__tn__=%2CO%2CP-R",
+        "description": "Daniel Padilla has been a volunteer with the Devcon Davao Chapter, generously sharing his knowledge and skills in the tech industry. However, in this TechKwentuhan session, he will be sharing a short story about a student striving towards his dream job."
+    },
+    { 
+        "date": "2022-11-26", 
+        "name": "Tech Kwentuhan Week 2: Code Poetry", 
+        "org": "DevCon",
+        "link": "https://www.facebook.com/devcondavao/posts/pfbid0s4qonCyWcs5r9t1kQ25k6pxAvuguVUrzARmUUjp7X4dZ4X2LKPwFginVt35mH54Ll?__cft__[0]=AZXBWp6dWbJbCy5VqLqK-A7sT2mWeyfBngRjMtn5og8IpKI_EbPEpOiGfa9H-Ft9GqVbQpO_QGZM-pxAHkS6LZgvSwoZmr8d8tNzgPolzqhPcD3ZWwjM7ovMVZY_62DRO5Cz1-CPUHGFMH2m50cLLAYnJKR14PdvQvb5PMJHrOp1D_fr4NKpOyi21Mv1jr7s8Y0&__tn__=%2CO%2CP-R",
+        "description": "Meet Legolas Tyrael Lada, a member of UP Mindanao SPARCS. Sit back as he shares about coding not just as a means to an end but as a passion. Listen as he combines functional bits and passionate bytes in the IT industry."
+    },
+    {
+        "date": "2022-11-26", 
+        "name": "Career Talks", 
+        "org": "SPARCS",
+        "link": "https://www.facebook.com/SPARCSUPMin/posts/pfbid0ADrfRAuQGBVeKmPtCa7jCMuiruy886xEj2Lb3SxUQLaoun8EHsVUBben5k372mLGl?__cft__[0]=AZXKZuVlBKSBaOYayv9bot49MWLBktWkSAUd9CUewaCtaVqG3P3t-D5iBsZz9rdLgUiBEzfUrbWXxn1ta9hGBvshm9_8NluEhsVxPnChKAWCYX2GLuwd3Alq-_GoYywBAqElbmOaAIpxSelXHNIO90O-3ufhQ4Oa1PqKsTHEHTD_4SsHd_USVDS07M3Mw9ezL-A&__tn__=%2CO%2CP-R",
+        "description": "𝗘𝘃𝗲𝗿 𝘄𝗼𝗻𝗱𝗲𝗿𝗲𝗱 𝘄𝗵𝗮𝘁 𝗶𝘁'𝘀 𝗿𝗲𝗮𝗹𝗹𝘆 𝗹𝗶𝗸𝗲 𝘁𝗼 𝗰𝗼𝗱𝗲, 𝗰𝗿𝘂𝗻𝗰𝗵 𝗱𝗮𝘁𝗮, 𝗼𝗿 𝗱𝗲𝘀𝗶𝗴𝗻 𝘁𝗵𝗲 𝗻𝗲𝘅𝘁 𝗯𝗶𝗴 𝘁𝗵𝗶𝗻𝗴 𝗶𝗻 𝗨𝗜/𝗨𝗫? Whether you're eyeing your first internship, dreaming of a top-tier company, or contemplating your startup journey, this event might help you navigate your exhilarating expedition."
+    },
+    {
+        "date": "2022-11-11", 
+        "name": "DevFest Davao 2023", 
+        "org": "GDG Davao",
+        "link": "https://gdg.community.dev/events/details/google-gdg-davao-presents-devfest-davao-2023/",
+        "description": "Get ready to hear from accomplished industry leaders about the most recent breakthroughs, understand how these advancements are revolutionizing various sectors, and discover how you can incorporate them into your own projects or businesses. Don’t miss your chance to learn, network, and be inspired by the boundless possibilities of the digital age."
+    }
+]
