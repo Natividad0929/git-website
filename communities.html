@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header class="navbar">
             <img src="images/icons/people.png" class="logo">
             <h3 class="logo">COMMUNITIES</h3>
             <nav>
@@ -373,9 +373,39 @@
                     </div>
                 </div>
             </div>
+            <!--12. DEVCON Davao-->
+            <div class="flex-item">
+                <img src="images/devcon/devcon-banner.jpg" class="banner">
+                <div class="info">
+                    <h2>DEVCON DAVAO</h2>
+                    <p>DevCon Davao is a chapter of an orginization in the city of Davao which is from DevConnect Philippines Inc. (DEVCON) that is a... <span class="read-more">Read more</span></p>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay-wrap">
+                        <div class="overlay-box">
+                            <img src="images/icons/x-mark-128.png" class="exit">
+                            <div class="grid col">
+                                <div class="grid left-row">
+                                    <section class="organization">
+                                        <img src="images/devcon/devcon.png">
+                                    </section>
+                                    <section class="description">
+                                        <p>DevCon Davao is a chapter of an orginization in the city of Davao which is from DevConnect Philippines Inc. (DEVCON) that is a registered non-profit organization that empowers tech professionals, developers, and future geeks.  DEVCON does this through nationwide chapters and programs that provide a space to share knowledge, solve challenges, and develop impactful initiatives through technology. DEVCON is dedicated to promoting Filipino developers' ability on a global scale, whether in the academe, government, or IT industry.</p>
+                                    </section>
+                                    <section class="platform">
+                                        <a href="https://devcon.ph/davao/"><img src="img/website.png" class="icon"></a>
+                                        <a href="https://www.facebook.com/devcondavao/"><img src="img/fb.png" class="icon"></a>
+                                        <a href="https://nz.linkedin.com/company/devcon-davao"><img src="img/linkedin.png" class="icon"></a>
+                                    </section>
+                                </div>
+                                <div class="grid right-row" id="devcon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <script>
-
             let popupButtons = document.querySelectorAll(".read-more");
             let closeButtons = document.querySelectorAll(".exit");
             let popups = document.querySelectorAll(".overlay-container");
@@ -428,7 +458,15 @@
             }
             
             updateTransformOrigins();
-            
+
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.pageYOffset > 0) {
+                    navbar.classList.add('navbar-not-top');
+                } else {
+                    navbar.classList.remove('navbar-not-top');
+                }
+            });
         </script>
     </body>
 </html>

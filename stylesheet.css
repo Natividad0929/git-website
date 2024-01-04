@@ -100,6 +100,14 @@ header > h3 {
     cursor: pointer;
 }
 
+.navbar {
+    transition: background-color 0.5s ease;
+}
+
+.navbar-not-top {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .overlay-container {    
     height: 100%;
     width: 100%;
@@ -277,4 +285,8 @@ header > h3 {
 
 #awsugph {
     background-image: url("images/awsugph/awsugph-2.jpg");
+}
+
+#devcon {
+    background-image: url("images/devcon/devcon-2.jpg");
 }
