@@ -1,0 +1,270 @@
+body {
+    background-color: darkgray;
+    font-family: 'Saira Condensed', sans-serif;
+    margin: 0;
+    background-color: #f7f5f5;
+    background: url('img/bgtest.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h2, p {
+    margin: 0;
+}
+
+p {
+    text-align: left;
+    font-size: 20px;
+    margin: 0.25em;
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header ul {
+    margin: 0 10%;
+    padding: 20px 0;
+}
+
+header li {
+    display: inline-block;
+    padding: 8px 24px;
+}
+
+.nav {
+    float: right;
+    font-size: 24px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 103px 7% 0;
+}
+
+.flex-item {
+    background-color: #ebebeb;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px;
+    margin: 32px;
+    height: 470px;
+    width: 320px;
+    position: relative;
+    transition: transform 0.3s ease;;
+}
+
+.read-more{
+    color: rgb(64, 165, 224);
+}
+
+.banner {
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 60%;
+    width: 100%;
+    z-index: 1;
+}
+
+.info {
+    height: 168px;
+    margin-top: -7px;
+    padding: 5px 10px;
+    z-index: 1;
+}
+
+.info span {
+    cursor: pointer;
+}
+
+.overlay-container {    
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -99;
+    transform: scale(0); /* Start small */
+    transition: transform 0.5s ease-in-out; /* Animate size change */
+}
+
+.overlay-container.popped {
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+}
+
+.overlay-wrap {
+    background-color: #00000080;
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.overlay-wrap.popped {
+    opacity: 100%;
+}
+
+.overlay-box {
+    background-color: white;
+    text-align: left;
+    margin: 5.5% auto;
+    height: 80%;
+    width: 80%;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid.col {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100%;
+    margin-left: 60px;
+}
+
+.grid.left-row {
+    grid-template-rows: 2fr 2fr 1fr;
+}
+
+.grid.right-row {
+    grid-template-rows: 1fr 4fr;
+    background-size: cover;
+}
+
+.organization {
+    height: 30vh;
+    position: relative;
+}
+
+.organization > img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+
+.organization > span {
+    position: absolute;
+    font-size: 12.5vh;
+    line-height: 256%;
+    left: 336px;
+}
+
+.description {
+    height: 30vh;
+    overflow: auto;
+}
+
+.description > p {
+    font-size: 1.5em;
+    padding-right: 60px;
+}
+
+.platform {
+    padding: 20px 0;
+}
+
+.platform > img {
+    margin: 0 20px;
+}
+
+.exit {
+    position: absolute;
+    margin: 20px;
+    width: 20px;
+}
+
+.icon {
+    width: 7.5%;
+}
+
+#logo {
+    vertical-align: middle;
+    height: 48px;
+    margin-right: 20px;
+}
+
+#title {
+    font-size: 32px;
+    padding: 0 16px;
+}
+
+#ideas {
+    background-image: url("images/ideasdavao/ideasdavao-2.jpg");
+    background-position: 55%;
+
+}
+
+#dice {
+    background-image: url("images/dice/dice-2.jpg");
+}
+
+#sparcs {
+    background-image: url("images/sparcs/sparcs-2.jpg");
+    background-position: 100%;
+}
+
+#ddi {
+    background-image: url("images/ddi/ddi-2.jpg");
+}
+
+#dgdc {
+    background-image: url("images/dgdc/dgdc-2.jpg");
+    background-position: 40%;
+}
+
+#php {
+    background-image: url("images/phpdavao/phpdavao-2.jpeg");
+    background-position: 60%;
+}
+
+#uxdavao {
+    background-image: url("images/uxdavao/uxdavao-2.jpg");
+    background-position: 55%;
+}
+
+#davaojs {
+    background-image: url("images/davaojs/davaojs-2.jpg");
+}
+
+#davaodefi {
+    background-image: url("images/davaodefi/davaodefi-2.jpg");
+}
+
+#gdgdavao {
+    background-image: url("images/gdgdavao/gdgdavao-2.jpg");
+    background-position: 70%;
+}
+
+#awsugph {
+    background-image: url("images/awsugph/awsugph-2.jpg");
+}

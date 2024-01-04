@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    font-family: 'Saira Condensed', sans-serif;
+    margin: 0px;
+    width: 100%;
+    background-color: #f7f5f5;
+    background: url('img/bgtest.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* End of Universal/Body Selectors */
+
+/* Navbar CSS */
+
+li, a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 12.5%;
+    /* background-color: transparent; */
+    background-color: rgba(0, 0, 0, 0.946);
+    height: 12vh;
+    width: 100%;
+    z-index: 100;
+    margin-top: -15vh;
+}
+
+header h3 {
+    margin-right: auto;
+    color: white;
+    padding-left: 10px;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-links a {
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: blue;
+}
+
+/* End of Navbar CSS */
+
+/* Start of Grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 40px;
+    margin: 0 10%;
+    height: 80vh;
+    margin-top: 15vh;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* End of grid */
+
+/* Start of Contact Form */
+
+
+
+
+.button {
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 5px;
+    border: none; 
+    cursor: pointer;
+}
+.transparent-input {
+    background: transparent; /* Makes the input field transparent */
+    border: none; /* Removes all borders */
+    border-bottom: 1px solid gray; /* Adds a gray border at the bottom */
+    outline: none; /* Removes the outline */
+    padding: 10px;
+}
+
+
+
+
+
+
+/* :root {
+    --size-bezel: 10px;
+    --size-radius: 5px;
+  }
+
+.input {
+    position: relative;
+}
+
+.input__label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: calc(var(--size-bezel) * 0.75) calc(var(--size-bezel) * .5);
+    margin: calc(var(--size-bezel) * 0.75 + 3px) calc(var(--size-bezel) * .5);
+    background: pink;
+    white-space: nowrap;
+    transform: translate(0, 0);
+    transform-origin: 0 0;
+    background: var(--color-background);
+    transition: transform 120ms ease-in;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.input__field {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 3px solid currentColor;
+    padding: calc(var(--size-bezel) * 1.5) var(--size-bezel);
+    color: currentColor;
+    background: transparent;
+    border-radius: var(--size-radius);
+}
+
+.input__field:focus,
+.input__field:not(:placeholder-shown) {
+    color: var(--color-accent);
+}
+
+.input__field:focus + .input__label,
+.input__field:not(:placeholder-shown) + .input__label {
+    transform: translate(.25rem, -65%) scale(.8);
+    color: var(--color-accent);
+} */
