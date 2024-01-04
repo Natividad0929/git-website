@@ -39,7 +39,7 @@ header li {
 
 .nav {
     float: right;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .flex-container {
@@ -156,6 +156,7 @@ header li {
 }
 
 .organization {
+    height: 30vh;
     position: relative;
 }
 
@@ -171,6 +172,11 @@ header li {
     font-size: 12.5vh;
     line-height: 256%;
     left: 336px;
+}
+
+.description {
+    height: 30vh;
+    overflow: auto;
 }
 
 .description > p {
@@ -192,14 +198,18 @@ header li {
     width: 20px;
 }
 
+.icon {
+    width: 7.5%;
+}
+
 #logo {
-    vertical-align: middle;
+    vertical-align: text-bottom;
     height: 48px;
     margin-right: 20px;
 }
 
 #title {
-    font-size: 40px;
+    font-size: 32px;
     padding: 0 16px;
 }
 
