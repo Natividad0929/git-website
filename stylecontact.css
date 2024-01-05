@@ -31,7 +31,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px 12.5%;
+    padding: 20px 13.5%;
     /* background-color: transparent; */
     background-color: rgba(0, 0, 0, 0.946);
     height: 12vh;
@@ -103,7 +103,7 @@ h1 {
 }
 
 .container1 {
-    margin: 9% 0 0 15%;
+    margin: 10% 0 0 15%;
 }
 
 .p1 {
@@ -147,16 +147,34 @@ h1 {
 .container3 li {
     list-style: none;
     text-decoration: none;
+    font-size: 14px;
 }
 
-ul {
-    margin-top: 2%;
+h2 {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 5px;
 }
 
-ul li {
+.container3 ul {
+    margin: 2% 0 0 0%;
+}
+
+.container3 ul li {
     margin-bottom: 1%;
 }
 
+.name {
+   padding-bottom: 1%; 
+   letter-spacing: 1px;
+}
+
+.contacts {
+    padding-left: 5%;
+    letter-spacing: 1px;
+    font-size: 50px;
+    color: #6e99da;
+}
 
 /* :root {
     --size-bezel: 10px;

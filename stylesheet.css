@@ -25,34 +25,43 @@ p {
     margin: 0.25em;
 }
 
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 20px;
+    text-align: center;
+}
+
 header {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.95);
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
     position: fixed;
+    height: 6vh;
+    padding: 20px 12.5%;
     top: 0;
-    width: 100%;
+    width: 75%;
     z-index: 1;
 }
 
-header ul {
-    margin: 0 10%;
-    padding: 20px 0;
-}
-
-header li {
-    display: inline-block;
-    padding: 8px 24px;
-}
-
-.nav {
-    float: right;
-    font-size: 24px;
+header > h3 {
+    color: white;
+    margin: 0 auto 0 0;
+    font-size: 27px;
+    font-weight: 500;
+    padding-left: 10px;
 }
 
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 103px 7% 0;
+    margin: 80px 7% 0;
 }
 
 .flex-item {
@@ -65,6 +74,15 @@ header li {
     width: 320px;
     position: relative;
     transition: transform 0.3s ease;;
+}
+
+.nav-links a {
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: blue;
 }
 
 .read-more{
@@ -91,6 +109,14 @@ header li {
     cursor: pointer;
 }
 
+.navbar {
+    transition: background-color 0.5s ease;
+}
+
+.navbar-not-top {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .overlay-container {    
     height: 100%;
     width: 100%;
@@ -101,8 +127,8 @@ header li {
     right: 0;
     bottom: 0;
     z-index: -99;
-    transform: scale(0); /* Start small */
-    transition: transform 0.5s ease-in-out; /* Animate size change */
+    transform: scale(0); /* start small */
+    transition: transform 0.5s ease-in-out; /* animate size change */
 }
 
 .overlay-container.popped {
@@ -193,7 +219,7 @@ header li {
     padding: 20px 0;
 }
 
-.platform > img {
+.platform  img {
     margin: 0 20px;
 }
 
@@ -207,14 +233,15 @@ header li {
     width: 7.5%;
 }
 
-#logo {
+.logo {
+    cursor: pointer;
     vertical-align: middle;
-    height: 48px;
-    margin-right: 20px;
+    height: 40px;
 }
 
 #title {
     font-size: 32px;
+    margin: auto;
     padding: 0 16px;
 }
 
@@ -267,4 +294,8 @@ header li {
 
 #awsugph {
     background-image: url("images/awsugph/awsugph-2.jpg");
+}
+
+#devcon {
+    background-image: url("images/devcon/devcon-2.jpg");
 }
